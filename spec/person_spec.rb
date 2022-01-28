@@ -22,8 +22,9 @@ describe Person do
   it 'Shoud check if person has parent permission' do
     expect(person.parent_permission).to eq 'true'
   end
-  it 'Shoud check if person has parent permission' do
-    expect(person.parent_permission).not_to eq 'false'
+  it 'Shoud Correct the name' do
+    person2 = Person.new(30, 'Mhdez', 'false')
+    expect(person2.parent_permission).to eql 'false'
   end
 
   it 'Shoud check if the person is not under age' do
