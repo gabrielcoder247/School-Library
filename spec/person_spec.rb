@@ -19,9 +19,11 @@ describe Person do
     person.validate_name
     expect(person.name).to eql 'Mhdez'
   end
-
   it 'Shoud check if person has parent permission' do
     expect(person.parent_permission).to eq 'true'
+  end
+  it 'Shoud check if person has parent permission' do
+    expect(person.parent_permission).not_to eq 'false'
   end
 
   it 'Shoud check if the person is not under age' do

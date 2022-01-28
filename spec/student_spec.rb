@@ -2,7 +2,7 @@ require_relative '../student'
 
 describe Student do
   before(:each) do
-    @student = Student.new('microverse', 27, 'MhdezCoronado')
+    @student = Student.new('microverse', 27, 'MhdezCoronado', 'true')
   end
 
   it('Shoud check if student is instance of Student') do
